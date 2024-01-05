@@ -1,0 +1,137 @@
+-- HBASE TABLE 1: ckboyd_request_summary
+
+create external table ckboyd_requests_summary_hbase(
+  zipyear string,
+  zip_code_cleaned string,
+  year string,
+  count_311IOC bigint, 
+  count_AAD bigint, 
+  count_AVN bigint, 
+  count_BAM bigint, 
+  count_BBA bigint, 
+  count_BBC bigint, 
+  count_BBD bigint, 
+  count_BPI bigint, 
+  count_CAFE bigint, 
+  count_CIAC bigint, 
+  count_CORNVEND bigint, 
+  count_EAE bigint, 
+  count_EAF bigint, 
+  count_EAQ bigint, 
+  count_ESPC bigint, 
+  count_FAC bigint, 
+  count_FPC bigint, 
+  count_HFF bigint, 
+  count_PBD bigint, 
+  count_PBLDR bigint, 
+  count_PBS bigint, 
+  count_PCB bigint, 
+  count_PCC bigint, 
+  count_PET bigint, 
+  count_PHB bigint, 
+  count_PHF bigint, 
+  count_PSL bigint, 
+  count_QAC bigint, 
+  count_RFC bigint, 
+  count_SCB bigint, 
+  count_SCS bigint, 
+  count_SCT bigint, 
+  count_SCX bigint, 
+  count_SDO bigint, 
+  count_SDP bigint, 
+  count_SDW bigint, 
+  count_SEC bigint, 
+  count_SEL bigint, 
+  count_SFC bigint, 
+  count_SFQ bigint, 
+  count_SGA bigint, 
+  count_SGV bigint, 
+  count_SIE bigint, 
+  count_SRRC bigint, 
+  count_SRRP bigint, 
+  count_SWSNOREM bigint, 
+  count_TNP bigint, 
+  count_VBL bigint, 
+  count_WCA3 bigint, 
+  count_WM3 bigint, 
+  count_AAE bigint, 
+  count_AAF bigint, 
+  count_AAI bigint, 
+  count_BAG bigint, 
+  count_BBK bigint, 
+  count_BUNGALOW bigint, 
+  count_CHECKFOR bigint, 
+  count_CSC bigint, 
+  count_CSF bigint, 
+  count_CSP bigint, 
+  count_CST bigint, 
+  count_DBPC bigint, 
+  count_EAB bigint, 
+  count_EBD bigint, 
+  count_GRAF bigint, 
+  count_HDF bigint, 
+  count_HFB bigint, 
+  count_HOP bigint, 
+  count_INR bigint, 
+  count_JNS bigint, 
+  count_LIQUORCO bigint, 
+  count_LPRC bigint, 
+  count_MWC bigint, 
+  count_NAA bigint, 
+  count_NOSOLCPP bigint, 
+  count_OCC bigint, 
+  count_ODM bigint, 
+  count_PBE bigint, 
+  count_PCD bigint, 
+  count_PCE bigint, 
+  count_PCL bigint, 
+  count_PCL3 bigint, 
+  count_PETCO bigint, 
+  count_RBL bigint, 
+  count_SCC bigint, 
+  count_SCP bigint, 
+  count_SCQ bigint, 
+  count_SDR bigint, 
+  count_SED bigint, 
+  count_SEE bigint, 
+  count_SEF bigint, 
+  count_SFA bigint, 
+  count_SFB bigint, 
+  count_SFD bigint, 
+  count_SFK bigint, 
+  count_SFN bigint, 
+  count_SGG bigint, 
+  count_SGQ bigint, 
+  count_SHVR bigint, 
+  count_SKA bigint, 
+  count_SNPBLBS bigint, 
+  count_WBJ bigint, 
+  count_WBK bigint, 
+  count_WBT bigint, 
+  count_WCA bigint, 
+  count_WCA2 bigint,
+  total_count bigint,
+  total_population bigint)
+STORED BY 'org.apache.hadoop.hive.hbase.HBaseStorageHandler'
+WITH SERDEPROPERTIES ('hbase.columns.mapping' = ':key,stats:zip_code_cleaned,stats:year,stats:count_311IOC#b,stats:count_AAD#b,stats:count_AVN#b,stats:count_BAM#b,stats:count_BBA#b,stats:count_BBC#b,stats:count_BBD#b,stats:count_BPI#b,stats:count_CAFE#b,stats:count_CIAC#b,stats:count_CORNVEND#b,stats:count_EAE#b,stats:count_EAF#b,stats:count_EAQ#b,stats:count_ESPC#b,stats:count_FAC#b,stats:count_FPC#b,stats:count_HFF#b,stats:count_PBD#b,stats:count_PBLDR#b,stats:count_PBS#b,stats:count_PCB#b,stats:count_PCC#b,stats:count_PET#b,stats:count_PHB#b,stats:count_PHF#b,stats:count_PSL#b,stats:count_QAC#b,stats:count_RFC#b,stats:count_SCB#b,stats:count_SCS#b,stats:count_SCT#b,stats:count_SCX#b,stats:count_SDO#b,stats:count_SDP#b,stats:count_SDW#b,stats:count_SEC#b,stats:count_SEL#b,stats:count_SFC#b,stats:count_SFQ#b,stats:count_SGA#b,stats:count_SGV#b,stats:count_SIE#b,stats:count_SRRC#b,stats:count_SRRP#b,stats:count_SWSNOREM#b,stats:count_TNP#b,stats:count_VBL#b,stats:count_WCA3#b,stats:count_WM3#b,stats:count_AAE#b,stats:count_AAF#b,stats:count_AAI#b,stats:count_BAG#b,stats:count_BBK#b,stats:count_BUNGALOW#b,stats:count_CHECKFOR#b,stats:count_CSC#b,stats:count_CSF#b,stats:count_CSP#b,stats:count_CST#b,stats:count_DBPC#b,stats:count_EAB#b,stats:count_EBD#b,stats:count_GRAF#b,stats:count_HDF#b,stats:count_HFB#b,stats:count_HOP#b,stats:count_INR#b,stats:count_JNS#b,stats:count_LIQUORCO#b,stats:count_LPRC#b,stats:count_MWC#b,stats:count_NAA#b,stats:count_NOSOLCPP#b,stats:count_OCC#b,stats:count_ODM#b,stats:count_PBE#b,stats:count_PCD#b,stats:count_PCE#b,stats:count_PCL#b,stats:count_PCL3#b,stats:count_PETCO#b,stats:count_RBL#b,stats:count_SCC#b,stats:count_SCP#b,stats:count_SCQ#b,stats:count_SDR#b,stats:count_SED#b,stats:count_SEE#b,stats:count_SEF#b,stats:count_SFA#b,stats:count_SFB#b,stats:count_SFD#b,stats:count_SFK#b,stats:count_SFN#b,stats:count_SGG#b,stats:count_SGQ#b,stats:count_SHVR#b,stats:count_SKA#b,stats:count_SNPBLBS#b,stats:count_WBJ#b,stats:count_WBK#b,stats:count_WBT#b,stats:count_WCA#b,stats:count_WCA2#b,stats:total_count#b,stats:total_population#b')
+TBLPROPERTIES ('hbase.table.name' = 'ckboyd_request_summary');
+
+insert overwrite table ckboyd_requests_summary_hbase
+  select concat(zip_code_cleaned,year) as zipyear, *
+  from ckboyd_requests_summary
+  where concat(zip_code_cleaned,year) is not NULL;
+
+
+-- HBASE TABLE 2: ckboyd_request_crosswalk
+
+-- create request name crosswalk from short_code to sr_name
+create external table ckboyd_request_crosswalk_hbase(
+  sr_short_code string, 
+  sr_type string)
+STORED BY 'org.apache.hadoop.hive.hbase.HBaseStorageHandler'
+WITH SERDEPROPERTIES ('hbase.columns.mapping' = ':key,name:sr_type')
+TBLPROPERTIES ('hbase.table.name' = 'ckboyd_request_crosswalk');
+  
+insert overwrite table ckboyd_request_crosswalk_hbase
+select *
+from ckboyd_request_name_crosswalk;

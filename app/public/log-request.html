@@ -1,0 +1,155 @@
+<!DOCTYPE html PUBLIC "-//IETF//DTD HTML 2.0//EN">
+<html>
+  <head>
+    <title>Log Submitted 311 Request</title>
+    <link type="text/css" rel="stylesheet" href="basic-grey.css" />
+  </head>
+  <!-- using custom background image -->
+  <body style='background-image:URL("background.jpg");background-repeat:no-repeat;background-position:center top;-webkit-background-size:100%;-moz-background-size:100%;-o-background-size:100%;background-size: 100%;'>
+  <p style="margin-bottom:2cm"/>
+  <form action="/log.html" style="background-color:#E5F4FB;width:800px;margin:0 auto;padding-top=800px;" method="get" target="results_iframe" class="basic-grey">
+      <h1><img style="height: 20px; width: 20px;" src="chicago_flag.png" alt="logo" />  Log Submitted 311 Request</h1>
+      <p>Use the toggles below to log a submitted 311 request.</p>
+      <label>
+            <span>Year:</span>
+        </label>
+        <select name="year" id="year">
+            <option value="2019">2019</option>
+            <option value="2020">2020</option>
+            <option value="2021"selected>2021</option>
+            <option value="2022">2022</option>
+            <option value="2023">2023</option>
+        </select>
+
+      <label>
+          <span>Zip Code:</span>
+      </label>
+      <input type="text" name="zip_code" id="zip_code" value="60637">
+      </input>
+
+        <label>
+            <span>Request Type:</span>
+        </label>
+        <select name="code" id="code">
+            <option value="311IOC" selected>311 Information Only Call</option>
+            <option value="AAD">Sewer Cave-In Inspection Request</option>
+            <option value="AAE">Water On Street Complaint</option>
+            <option value="AAF">Water in Basement Complaint</option>
+            <option value="AAI">Alley Sewer Inspection Request</option>
+            <option value="AVN">Aircraft Noise Complaint</option>
+            <option value="BAG">Tobacco - General Complaint</option>
+            <option value="BAM">Tobacco - Sale to Minors Complaint</option>
+            <option value="BBA">Building Violation</option>
+            <option value="BBC">Buildings - Plumbing Violation</option>
+            <option value="BBD">No Building Permit and Construction Violation</option>
+            <option value="BBK">Vacant/Abandoned Building Complaint</option>
+            <option value="BPI">Porch Inspection Request</option>
+            <option value="BUNGALOW">Bungalow/Vintage Home Information Request</option>
+            <option value="CAFE">Sidewalk Café/Outdoor Dining Complaint</option>
+            <option value="CHECKFOR">Sewer Cleaning Inspection Request</option>
+            <option value="CIAC">Coyote Interaction Complaint</option>
+            <option value="CORNVEND">Pushcart Food Vendor Complaint</option>
+            <option value="CSC">Cab Feedback</option>
+            <option value="CSF">Consumer Fraud Complaint</option>
+            <option value="CSP">Public Vehicle/Valet Complaint</option>
+            <option value="CST">Consumer Retail Business Complaint</option>
+            <option value="DBPC">Divvy Bike Parking Complaint</option>
+            <option value="EAB">Nuisance Animal Complaint</option>
+            <option value="EAE">Stray Animal Complaint</option>
+            <option value="EAF">Vicious Animal Complaint</option>
+            <option value="EAQ">Report an Injured Animal</option>
+            <option value="EBD">Animal In Trap Complaint</option>
+            <option value="ESPC">E-Scooter Parking Complaint</option>
+            <option value="FAC">Commercial Fire Safety Inspection Request</option>
+            <option value="FPC">Inaccurate Fuel Pump Complaint</option>
+            <option value="GRAF">Graffiti Removal Request</option>
+            <option value="HDF">Lead Inspection Request</option>
+            <option value="HFB">Restaurant Complaint</option>
+            <option value="HFF">Smokeless Tobacco at Sports Event Complaint</option>
+            <option value="HOP">Home Buyer Program Info Request</option>
+            <option value="INR">Inaccurate Retail Scales Complaint</option>
+            <option value="JNS">Extreme Weather Notification</option>
+            <option value="LIQUORCO">Liquor Establishment Complaint</option>
+            <option value="LPRC">Licensed Pharmaceutical Representative Complaint</option>
+            <option value="MWC">Wage Complaint</option>
+            <option value="NAA">Clean and Green Program Request</option>
+            <option value="NOSOLCPP">No Solicitation Complaint</option>
+            <option value="OCC">Cable TV Complaint</option>
+            <option value="ODM">Outdated Merchandise Complaint</option>
+            <option value="PBD">Inspect Public Way Request</option>
+            <option value="PBE">Pavement Cave-In Inspection Request</option>
+            <option value="PBLDR">Protected Bike Lane - Debris Removal</option>
+            <option value="PBS">Sidewalk Inspection Request</option>
+            <option value="PCB">Sign Repair Request - Stop Sign</option>
+            <option value="PCC">Sign Repair Request - One Way Sign</option>
+            <option value="PCD">Sign Repair Request - Do Not Enter Sign</option>
+            <option value="PCE">Sign Repair Request - All Other Signs</option>
+            <option value="PCL">Bicycle Request/Complaint</option>
+            <option value="PCL3">E-Scooter</option>
+            <option value="PET">Pet Wellness Check Request</option>
+            <option value="PETCO">Petcoke Dust Complaint</option>
+            <option value="PHB">Alley Pothole Complaint</option>
+            <option value="PHF">Pothole in Street Complaint</option>
+            <option value="PSL">Paid Sick Leave Violation</option>
+            <option value="QAC">City Vehicle Sticker Violation</option>
+            <option value="RBL">Business Complaints</option>
+            <option value="RFC">Renters and Foreclosure Complaint</option>
+            <option value="SCB">Sanitation Code Violation</option>
+            <option value="SCC">Missed Garbage Pick-Up Complaint</option>
+            <option value="SCP">Weed Removal Request</option>
+            <option value="SCQ">Yard Waste Pick-Up Request</option>
+            <option value="SCS">Wire Basket Request</option>
+            <option value="SCT">Clean Vacant Lot Request</option>
+            <option value="SCX">Recycling Inspection Request</option>
+            <option value="SDO">Ice and Snow Removal Request</option>
+            <option value="SDP">Street Cleaning Request</option>
+            <option value="SDR">Fly Dumping Complaint</option>
+            <option value="SDW">Snow - Object/Dibs Removal Request</option>
+            <option value="SEC">Tree Emergency</option>
+            <option value="SED">Tree Planting Request</option>
+            <option value="SEE">Tree Removal Request</option>
+            <option value="SEF">Tree Trim Request (NO LONGER BEING ACCEPTED)</option>
+            <option value="SEL">Tree Debris Clean-Up Request</option>
+            <option value="SFA">Alley Light Out Complaint</option>
+            <option value="SFB">Traffic Signal Out Complaint</option>
+            <option value="SFC">Viaduct Light Out Complaint</option>
+            <option value="SFD">Street Light Out Complaint</option>
+            <option value="SFK">Street Light Pole Damage Complaint</option>
+            <option value="SFN">Street Light On During Day Complaint</option>
+            <option value="SFQ">Street Light Pole Door Missing Complaint</option>
+            <option value="SGA">Rodent Baiting/Rat Complaint</option>
+            <option value="SGG">Bee/Wasp Removal</option>
+            <option value="SGQ">Dead Animal Pick-Up Request</option>
+            <option value="SGV">Dead Bird</option>
+            <option value="SHVR">Shared Housing/Vacation Rental Complaint</option>
+            <option value="SIE">Garbage Cart Maintenance</option>
+            <option value="SKA">Abandoned Vehicle Complaint</option>
+            <option value="SNPBLBS">Snow Removal - Protected Bike Lane or Bridge Sidewalk</option>
+            <option value="SRRC">Blue Recycling Cart</option>
+            <option value="SRRP">Recycling Pick Up</option>
+            <option value="SWSNOREM">Snow – Uncleared Sidewalk Complaint</option>
+            <option value="TNP">Ridesharing Complaint</option>
+            <option value="VBL">Vehicle Parked in Bike Lane Complaint</option>
+            <option value="WBJ">No Water Complaint</option>
+            <option value="WBK">Low Water Pressure Complaint</option>
+            <option value="WBT">Open Fire Hydrant Complaint</option>
+            <option value="WCA">Water Quality Concern</option>
+            <option value="WCA2">Water Lead Test Kit Request</option>
+            <option value="WCA3">Water Lead Test Visit Request</option>
+            <option value="WM3">Check for Leak</option>
+        </select>
+
+
+      <label>
+	<span>&nbsp;</span><input type="submit" value="Submit">
+      </label>
+
+    </form>
+    <p style="margin-bottom:2cm"/>
+    <iframe frameBorder="0" name="results_iframe" style="display:block;width:70%;margin-left:auto;margin-right:auto"/>
+
+  </body>
+
+
+
+</html>

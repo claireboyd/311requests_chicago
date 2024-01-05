@@ -1,0 +1,45 @@
+<!DOCTYPE html PUBLIC "-//IETF//DTD HTML 2.0//EN">
+<html>
+  <head>
+    <title>Neighborhood Needs</title>
+    <link type="text/css" rel="stylesheet" href="basic-grey.css" />
+  </head>
+  <!-- Thanks to Mario C. E. Freese <mcefreese@gmail.com> for permission to use background image -->
+  <body style='background-image:URL("background.jpg");background-repeat:no-repeat;background-position:center top;-webkit-background-size:100%;-moz-background-size:100%;-o-background-size:100%;background-size: 100%;'>
+    <p style="margin-bottom:2cm"/>
+    <form action="/summary.html"  style="background-color: #E5F4FB" method="get" target="results_iframe" class="basic-grey">
+        <h1><img style="height: 20px; width: 20px;" src="chicago_flag.png" alt="logo" />  311 Requests in Chicago</h1>
+        <p>What are your neighbors hoping that the city will help them with?</p>
+
+        <p>Select a year and enter your Chicago zip code below to get a sense of how
+            your neighbors are engaging with the city government of Chicago
+            by submitting 311 requests to get certain items in their neighborhood fixed.</p>
+
+        <label>
+	<span>Year:</span>
+      </label>
+          <select name="year" id="year">
+              <option value="2019">2019</option>
+              <option value="2020">2020</option>
+              <option value="2021"selected>2021</option>
+              <option value="2022">2022</option>
+              <option value="2023">2023</option>
+          </select>
+      <label>
+    <span>Zip Code:</span>
+      </label>
+        <input  type="text" name="zip_code_cleaned" id="zip_code_cleaned" value="60637">
+        </input>
+	<p></p>
+    <p></p>
+        <span></span> <input  type="submit" value="Explore Your Neighborhood's 311 Requests" class="basic-grey">
+      </label>
+
+    <p>Visit <a href="https://311.chicago.gov/s/service-request?language=en_US">311 Chicago</a> to learn more about requests types and how to submit a 311 request for your neighhorhood.</p>
+
+    </form>
+    <p style="margin-bottom:2cm"/>
+
+    <iframe frameBorder="0" name="results_iframe" style="display:block;width:70%;margin-left:auto;margin-right:auto"/>
+  </body>
+</html>

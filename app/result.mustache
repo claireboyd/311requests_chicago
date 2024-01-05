@@ -1,0 +1,21 @@
+<!DOCTYPE html PUBLIC "-//IETF//DTD HTML 2.0//EN">
+<html>
+<head>
+    <title>Result</title>
+    <link type="text/css" rel="stylesheet" href="table.css" media="all"/>
+</head>
+<body style="background-color: #E5F4FB">
+<p>There have been <strong>{{total_count}} total 311 requests</strong> in {{zip_code_cleaned}} in {{year}}.
+    This means roughly {{per_capita_requests}} requests per resident. </p>
+
+<p>Let's explore a bit more about what your neighbors are requesting:</p>
+
+<table class="table">
+    <tr><td>Request Type</td><td>Total 311 Requests</td><td>Frequency in Zip Code</td></tr>
+    {{#output}}
+        <tr><td>{{request_code}}</td><td>{{count}}</td><td>{{freq}}
+        </tr>{{/output}}
+</table>
+
+</p>
+</body></html>

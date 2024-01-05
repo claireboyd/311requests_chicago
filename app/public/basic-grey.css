@@ -1,0 +1,130 @@
+/* Adapted from http://www.sanwebe.com/2013/10/css-html-form-styles */
+.basic-grey {
+    margin-left:auto;
+    margin-right:auto;
+    max-width: 500px;
+    background: #F7F7F7;
+    padding: 25px 15px 25px 10px;
+    font: 12px Arial, sans-serif;
+    color: black;
+    text-shadow: 1px 1px 1px #FFF;
+    border:1px solid #E4E4E4;
+}
+.basic-grey h1 {
+    font-size: 20px;
+    padding: 10px 10px 10px 10px;
+    display: block;
+    margin: -10px -10px 10px -10px;
+    text-align: center;
+    color: black;
+}
+.basic-grey h1>span {
+    display: block;
+    font-size: 11px;
+}
+
+.basic-grey label {
+    display: block;
+    margin: 0px;
+}
+.basic-grey label>span {
+    float: left;
+    width: 20%;
+    text-align: right;
+    padding-right: 10px;
+    margin-top: 10px;
+    color: #888;
+}
+.basic-grey input[type="text"], .basic-grey input[type="email"], .basic-grey textarea, .basic-grey select {
+    border: 1px solid #DADADA;
+    color: black;
+    height: 30px;
+    margin-bottom: 6px;
+    margin-right: 6px;
+    margin-top: 2px;
+    outline: 0 none;
+    padding: 3px 3px 3px 5px;
+    width: 70%;
+    font-size: 12px;
+    line-height:15px;
+    box-shadow: inset 0px 1px 4px #ECECEC;
+    -moz-box-shadow: inset 0px 1px 4px #ECECEC;
+    -webkit-box-shadow: inset 0px 1px 4px #ECECEC;
+}
+.basic-grey textarea{
+    padding: 5px 3px 3px 5px;
+}
+
+.basic-grey form {
+    background-color: #b1ddf3;
+}
+
+.basic-grey select {
+    background: #FFF url('down-arrow.png') no-repeat right;
+    appearance:none;
+    -webkit-appearance:none;
+    -moz-appearance: none;
+    text-indent: 0.01px;
+    text-overflow: '';
+    width: 70%;
+    height: 35px;
+    line-height: 25px;
+}
+.basic-grey textarea{
+    height:100px;
+}
+.basic-grey .button {
+    background: 	#ff0000;
+    border: none;
+    padding: 10px 25px 10px 25px;
+    color: #FFF;
+    box-shadow: 1px 1px 5px #B6B6B6;
+    border-radius: 3px;
+    text-shadow: 1px 1px 1px #9E3F3F;
+    cursor: pointer;
+}
+.basic-grey .button:hover {
+    background: 	#ff0000
+}
+
+.basic-grey input[type="submit"] {
+    background: 	#ff0000;
+    border: none;
+    padding: 10px 25px 10px 25px;
+    color: #FFF;
+    box-shadow: 1px 1px 5px #B6B6B6;
+    border-radius: 3px;
+    text-shadow: 1px 1px 1px #9E3F3F;
+    cursor: pointer;
+}
+
+.basic-grey table {
+    height: 100%;
+    width: 100%;
+    margin-bottom: 15px;
+    border-collapse: collapse;
+    border-spacing: 0;
+    background-color: #FFF;
+    border: 1px solid #E4E4E4;
+}
+
+.basic-grey th, .basic-grey td {
+    border: 1px solid #E4E4E4;
+    padding: 8px;
+    text-align: left;
+}
+
+.basic-grey th {
+    background-color: #F7F7F7;
+    font-weight: bold;
+}
+
+.basic-grey h3 {
+    display: inline;
+    font-weight: bold;
+    margin-right: 10px;
+    vertical-align: middle;
+    text-align: center;
+    color: #888;
+}
+
