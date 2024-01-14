@@ -3,7 +3,7 @@
 
 ##### Quick Start Guide to Run My App (all code used in video)
 
-![](https://im3.ezgif.com/tmp/ezgif-3-a87a130e78.gif)
+![](https://github.com/claireboyd/311requests_chicago/blob/main/ckboyd_finalproject_video.gif)
 
 In order to run my app, first run my speed layer application by first ssh-ing into the cluster and creating a 8070:8070 tunnel:
 
